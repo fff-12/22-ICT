@@ -54,10 +54,12 @@ def calculate_order_price(availability: dict, store: dict):
         else:
             print("Некоректний ввід.")
 
-if __name__ == "__main__":
+def main():
     # store = item_prices({})
     # availability = item_availability(store)
+    calculate_order_price(availability, store)
     
+if __name__ == "__main__":
     store = {
         "хліб": 25.00,
         "молоко": 40.00,
@@ -84,4 +86,4 @@ if __name__ == "__main__":
         "макарони": False
     }
 
-    calculate_order_price(availability, store)
+    main()
